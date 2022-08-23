@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../images/2022-08-21_22.57.58.png) no-repeat;
+    background-size: auto;
+}
+
+.box {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1080px;
+    height: 2000px;
+    /*
+    border-top是毛玻璃边框的上面
+    border-left是毛玻璃边框的左边
+    border-bottom是毛玻璃边框的下面
+    border-right是毛玻璃边框的右边
+    */
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    /*毛玻璃的浓度*/
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.3);
+    transition: 3s;
+}
+
+
+h1 {
+    color: aliceblue;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+p {
+    color: aliceblue;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+a {
+    color: rgb(0, 102, 255);
+}
+
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 162, 255);
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.4s;
+}
+
+.afd-btn button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(141, 108, 227);
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #ffffff; 
+    transition: 0.4s;
+}
+
+.afd-btn button:hover {
+    background-color: #ffffff;
+    transition: 0.4s;
+}
