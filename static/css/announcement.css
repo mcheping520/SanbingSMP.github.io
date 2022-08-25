@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    background-color: black;
+    background-size: auto;
+}
+
+h1 {
+    color:aliceblue;
+    text-shadow: 5px 5px 5px rgba(96, 252, 255, 0.44);
+}
+
+h2 {
+    color:aliceblue;
+    text-shadow: 5px 5px 5px rgba(96, 252, 255, 0.44);
+}
+
+p {
+    color:aliceblue;
+    text-shadow: 5px 5px 5px rgba(96, 252, 255, 0.44);
+}
