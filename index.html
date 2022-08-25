@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+-本模板源码由蕊蕊博客倾尽心血打造，希望各位模仿者手下留情，望佛祖保佑蕊蕊博客SEO博客永远无BUG!
+-对了，有需要了解的代码可以自己先鼓捣下，搞不定可以QQ 1612704618 联系我
+-前端开发Rui rui QQ：1612704618
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>伞兵SMP</title>
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<link rel="shortcut icon" href="img/cargo_managere.png" type="image/x-icon">
+		<script src="static/js/main.js"></script>
+		<style type="text/css">
+			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #FCFCFC;}.loading-img{width: 480px;height: 720px;margin: auto;background: url(static/images/1612704618.gif);}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#C6CDD4;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#C6CDD4;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:white;font-size:20px;}.menu-item h2 a:hover{color:white;font-size:27px;}#item-box{height: 1150px;background:white;overflow: hidden;}
+		</style>
+	</head>
+	<script>
+		document.onreadystatechange=function(){
+			if(document.readyState=="complete"){
+				$(".loading").fadeOut();
+			}
+		}
+	</script>
+	<body>
+		<div class="loading">
+			<div class="loading-img">
+			</div>
+		</div>
+		<div id="menu-box">
+			<div class="menu">
+				<div class="menu-item">
+					<h2 class="logo"><a href="#">伞兵 Survival Multi Player</a></h2>
+					<div class="menu-item-list">
+						<a href="https://www.bilibili.com/video/BV1aT411A7YY" target="_blank">照顾外挂专用客户端</a>
+						<a href="1.html" target="_blank">关于</a>
+						<a href="./static/announcement/announcement.html" target="_blank">服务器公告</a>
+						<a href="http://www.svipzy.cn/" target="_blank">模板</a>
+						<a href="./static/share/share.html" target="_blank">客户端</a><!---， -->
+						<a href="#">首页</a><!-- ， -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="join-buttom">
+				<div class="join-item">
+					<h2>伞兵 Survival Multi Player</h2><!--  -->
+					    <p>生存、红石、和平、战争、王国</p><!--  -->
+					</div>
+				<h1><a href="https://jq.qq.com/?_wv=1027&k=Bk9BydNN">加入QQ群</a></h1><!--  -->
+				<h1><a href="#">复制服务器IP</a></h1>
+			</div>
+		</div>
+		<div id="item-box">
+			<div class="box"><a href="#">&#9668&#9668 &nbsp; &nbsp;加入我们</a></div>
+			<div class="item-page-box">
+				<div class="item-page">
+					<h2>欢迎来到【伞兵SMP】</h2>
+					<img src="./static/images/QQ图片20220822103838.png">
+				</div>
+			</div>
+			<div id="footer">
+				<p id="counter"></p>
+				<p><a href="http://www.svipzy.cn" target="_blank">© 2016- 2020 www.svipzy.cn | 由SVIPZY 蕊蕊编写</a></p>
+				<p><a href="https://www.ixigua.com/home/1003192263117373">由@和平peaceful更改（西瓜视频）</a></p>
+				<p><a href="https://space.bilibili.com/2025948439">由@和平peaceful更改（bilibili）</a></p>
+			</div>
+		</div>	
+		<script src="static/js/jquery.js"></script>
+	<script>
+			function scroll() {
+					var top = $("#item-box").offset().top;
+					var scrollTop = $(window).scrollTop();
+					if (scrollTop < top) {
+						$('#menu-box').css({"background":"none"});
+						$('#menu-box').css({"box-shadow":"none"});
+						$(".menu-item h2 a").css({"color":"#C6CDD4"})
+						$(".menu-item a").css({"color":"#C6CDD4"});
+					} else {
+						$("#menu-box").css({"background":"#FFFFFF"});
+						$("#menu-box").css({"box-shadow":"0px 0px 8px #EAEAEA"});
+						$(".menu-item h2 a").css({"color":"#333333"})
+						$(".menu-item-list a").css({"color":"#333333"});
+					}
+				}
+				$(window).on('scroll', function() {
+					scroll()
+				});
+		</script>
+	</body>
+</html>
